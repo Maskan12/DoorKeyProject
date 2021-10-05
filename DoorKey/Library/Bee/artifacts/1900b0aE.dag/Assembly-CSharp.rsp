@@ -339,6 +339,7 @@
 "Assets/Scenes/PickUp.cs"
 "Assets/Scenes/RightGateTriggerController.cs"
 "Assets/Scenes/TriggerDoorController.cs"
+"Assets/Scripts/ButtonScripts.cs"
 "Assets/StarterAssets/FirstPersonController/Scripts/BasicRigidBodyPush.cs"
 "Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs"
 "Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs"
