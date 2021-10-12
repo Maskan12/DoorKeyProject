@@ -21,7 +21,7 @@ public class TriggerDoorController : MonoBehaviour
 
             else if (closeTrigger)
             {
-                myDoor.Play("DoorClose", 0, 0.0f);
+                myDoor.Play("FrontDoorClose", 0, 0.0f);
                 gameObject.SetActive(false);
             }
         }
