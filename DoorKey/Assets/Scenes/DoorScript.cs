@@ -62,13 +62,13 @@ public class DoorScript : MonoBehaviour
         {
             if (open)
             {
-                GUI.Box(new Rect(0, 0, 200, 25), "Press E to close");
+                GUI.Box(new Rect(0, 0, 200, 25), "Press E to open");
             }
             else
             {
                 if (doorKey)
                 {
-                    GUI.Box(new Rect(0, 0, 200, 25), "Press E to open");
+                    GUI.Box(new Rect(0, 0, 200, 25), "Press E to close");
                 }
                 else
                 {
