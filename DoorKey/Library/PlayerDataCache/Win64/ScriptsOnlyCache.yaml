@@ -4,13 +4,21 @@ ScriptsOnlyBuild:
     - BasicRigidBodyPush
     - ButtonScripts
     - CodeLock
+    - CodeLock2
     - Controller
+    - Controller2
     - DoorKey
     - DoorScript
+    - DoorScriptTest
     - KeyGate
     - KeyItem
+    - KeySystem.KeyDoorController
+    - KeySystem.KeyInventory
+    - KeySystem.KeyItemController
+    - KeySystem.KeyRaycast
     - LeftGateTriggerController
     - PickUp
+    - PlayAnim
     - RightGateTriggerController
     - StarterAssets.FirstPersonController
     - StarterAssets.StarterAssetsInputs
@@ -78,59 +86,87 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
+      Script: {instanceID: 0}
+    - Class: 102
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1534}
+      Script: {instanceID: 1484}
     - Class: 114
-      Script: {instanceID: 2058}
+      Script: {instanceID: 1486}
     - Class: 114
-      Script: {instanceID: 2552}
+      Script: {instanceID: 1724}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 1932}
     - Class: 114
-      Script: {instanceID: 2974}
+      Script: {instanceID: 2250}
     - Class: 114
-      Script: {instanceID: 3060}
+      Script: {instanceID: 2570}
     - Class: 114
-      Script: {instanceID: 3802}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 3884}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 4534}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 2884}
     - Class: 114
-      Script: {instanceID: 5464}
+      Script: {instanceID: 3170}
     - Class: 114
-      Script: {instanceID: 5642}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 5834}
+      Script: {instanceID: 3832}
     - Class: 114
-      Script: {instanceID: 6010}
+      Script: {instanceID: 3980}
     - Class: 114
-      Script: {instanceID: 6498}
+      Script: {instanceID: 4002}
     - Class: 114
-      Script: {instanceID: 6712}
+      Script: {instanceID: 4084}
     - Class: 114
-      Script: {instanceID: 6918}
+      Script: {instanceID: 4734}
     - Class: 114
-      Script: {instanceID: 7012}
+      Script: {instanceID: 4740}
     - Class: 114
-      Script: {instanceID: 7850}
+      Script: {instanceID: 5664}
     - Class: 114
-      Script: {instanceID: 8118}
+      Script: {instanceID: 5708}
     - Class: 114
-      Script: {instanceID: 8358}
+      Script: {instanceID: 5844}
+    - Class: 114
+      Script: {instanceID: 6036}
+    - Class: 114
+      Script: {instanceID: 6074}
+    - Class: 114
+      Script: {instanceID: 6212}
+    - Class: 114
+      Script: {instanceID: 6598}
+    - Class: 114
+      Script: {instanceID: 6696}
+    - Class: 114
+      Script: {instanceID: 6800}
+    - Class: 114
+      Script: {instanceID: 6912}
+    - Class: 114
+      Script: {instanceID: 7118}
+    - Class: 114
+      Script: {instanceID: 7212}
+    - Class: 114
+      Script: {instanceID: 8050}
+    - Class: 114
+      Script: {instanceID: 8318}
+    - Class: 114
+      Script: {instanceID: 8558}
+    - Class: 114
+      Script: {instanceID: 8606}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -144,7 +180,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
     - Class: 218
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 1953259897
       Script: {instanceID: 0}
     Assets/Scenes/TitleScreen.unity:
     - Class: 1
@@ -172,17 +218,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1486}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3322}
     - Class: 114
-      Script: {instanceID: 4362}
+      Script: {instanceID: 4562}
     - Class: 114
-      Script: {instanceID: 5538}
+      Script: {instanceID: 5740}
     - Class: 114
-      Script: {instanceID: 5872}
+      Script: {instanceID: 6074}
     - Class: 114
-      Script: {instanceID: 6400}
+      Script: {instanceID: 6598}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -266,6 +312,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineTriggerAction
+  - hash:
+      serializedVersion: 2
+      Hash: bb05503338bbd6650083d191ce55f729
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KeySystem
+    className: KeyRaycast
   - hash:
       serializedVersion: 2
       Hash: 9b06583966b5c25325233c4ef1ab1fd4
@@ -370,6 +422,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: c96b8571d0b7296194933612ac242a06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KeySystem
+    className: KeyDoorController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -410,6 +468,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionEnterMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Controller2
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -646,6 +710,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 84e71392da3db7513b595a205baf0aab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KeySystem
+    className: KeyItemController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -656,6 +726,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Flow.dll
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 7fafdf6cb6960ca48b27cd0107f4394a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CodeLock2
   - hash:
       serializedVersion: 2
       Hash: 295852e83016219fe0ab9a38fc36f74a
@@ -1042,6 +1118,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: 84905672c7f33542f7a414301f9583c4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoorScriptTest
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1220,6 +1302,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: PlayerInputEditor
+  - hash:
+      serializedVersion: 2
+      Hash: f0b1e893e31ead3a7e0fb5ba27d98a38
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayAnim
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1550,8 +1638,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: aed833434590375f5b7024c5cf17b6e7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: KeySystem
+    className: KeyInventory
   platform: 19
   scenePathNames:
   - Assets/Scenes/TitleScreen.unity
   - Assets/Scenes/Main.unity
-  playerPath: C:/Users/Aryan/OneDrive/Desktop/Textures/Builds/First.exe
+  playerPath: C:/Users/tyro1/Documents/DoorKeyProject/DoorKey/First.exe
