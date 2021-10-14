@@ -46,7 +46,7 @@ public class DoorScript : MonoBehaviour
 
         if (open)
         {
-            var newRot = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0.0f, -90.0f, 0.0f), Time.deltaTime * 200);
+            var newRot = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0.0f, 180.0f, 0.0f), Time.deltaTime * 200);
             transform.rotation = newRot;
         }
         else
@@ -62,13 +62,13 @@ public class DoorScript : MonoBehaviour
         {
             if (open)
             {
-                GUI.Box(new Rect(0, 0, 200, 25), "Press E to open");
+                GUI.Box(new Rect(0, 0, 200, 25), "Press E to close");
             }
             else
             {
                 if (doorKey)
                 {
-                    GUI.Box(new Rect(0, 0, 200, 25), "Press E to close");
+                    GUI.Box(new Rect(0, 0, 200, 25), "Press E to open");
                 }
                 else
                 {
